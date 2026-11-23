@@ -1,0 +1,41 @@
+Experiment 1: resolution vs SNDR (ideal quantizer)
+    4 bit -> SNDR   24.59 dB, ENOB   3.79
+    6 bit -> SNDR   37.18 dB, ENOB   5.88
+    8 bit -> SNDR   48.90 dB, ENOB   7.83
+   10 bit -> SNDR   61.10 dB, ENOB   9.86
+   12 bit -> SNDR   73.08 dB, ENOB  11.85
+   14 bit -> SNDR   84.95 dB, ENOB  13.82
+   16 bit -> SNDR   95.04 dB, ENOB  15.49
+Experiment 2: input frequency vs SNDR (12-bit, jitter + acquisition)
+  fin=   3.97 kHz (  1% fs) -> SNDR   59.14 dB
+  fin=  11.96 kHz (  3% fs) -> SNDR   49.67 dB
+  fin=  23.99 kHz (  6% fs) -> SNDR   43.60 dB
+  fin=  47.97 kHz ( 12% fs) -> SNDR   37.58 dB
+  fin=  79.96 kHz ( 20% fs) -> SNDR   33.05 dB
+  fin= 120.00 kHz ( 30% fs) -> SNDR   29.27 dB
+  fin= 159.97 kHz ( 40% fs) -> SNDR   26.47 dB
+Experiment 3: comparator noise vs SNDR/ENOB (12-bit)
+  noise=0.00 LSB -> SNDR   73.08 dB, ENOB  11.85
+  noise=0.10 LSB -> SNDR   72.59 dB, ENOB  11.77
+  noise=0.25 LSB -> SNDR   70.62 dB, ENOB  11.44
+  noise=0.50 LSB -> SNDR   67.37 dB, ENOB  10.90
+  noise=1.00 LSB -> SNDR   63.18 dB, ENOB  10.20
+  noise=2.00 LSB -> SNDR   58.16 dB, ENOB   9.37
+Experiment 4: capacitor mismatch vs INL/DNL (12-bit)
+  sigma=0.0000 -> INLmax   0.000 LSB, DNLmax   0.000 LSB, SNDR   73.08 dB
+  sigma=0.0020 -> INLmax   1.852 LSB, DNLmax   2.682 LSB, SNDR   63.50 dB
+  sigma=0.0050 -> INLmax   4.633 LSB, DNLmax   6.711 LSB, SNDR   55.94 dB
+  sigma=0.0100 -> INLmax   9.280 LSB, DNLmax  13.441 LSB, SNDR   49.99 dB
+  sigma=0.0200 -> INLmax  18.613 LSB, DNLmax  26.959 LSB, SNDR   43.96 dB
+  sigma=0.0500 -> INLmax  46.938 LSB, DNLmax  67.985 LSB, SNDR   35.96 dB
+Experiment 5: acquisition time vs SNDR (12-bit, tau fixed)
+  tacq=      10 us (tacq/tau=50.00) -> SNDR   73.08 dB
+  tacq=       2 us (tacq/tau=10.00) -> SNDR   73.07 dB
+  tacq=     0.8 us (tacq/tau= 4.00) -> SNDR   73.09 dB
+  tacq=     0.4 us (tacq/tau= 2.00) -> SNDR   73.00 dB
+  tacq=     0.2 us (tacq/tau= 1.00) -> SNDR   72.58 dB
+  tacq=     0.1 us (tacq/tau= 0.50) -> SNDR   71.09 dB
+  tacq=    0.05 us (tacq/tau= 0.25) -> SNDR   67.94 dB
+
+experiment plot written to output/experiments.png
+experiment data written to output/experiments.json

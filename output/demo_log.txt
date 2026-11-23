@@ -1,0 +1,14 @@
+Demo -- 8-bit SAR ADC, nonideal=NonidealityConfig(comparator_offset=0.0, comparator_noise_rms=0.0, ref_error=0.0, cap_mismatch_sigma=0.0, acquisition_time=1e-06, switch_tau=0.0, sampling_jitter_rms=0.0, slew_nl=0.0, seed=0)
+SNDR 48.90 dB | ENOB 7.83 bit | INLmax(ep) 0.000 LSB | DNLmax 0.000 LSB
+trace @ 0.25 V -> code 64 (64), residual -0.500 LSB
+trace @ 0.5 V -> code 128 (128), residual -0.500 LSB
+trace @ 0.81 V -> code 207 (207), residual -0.140 LSB
+files written:
+  output/demo_transfer.png
+  output/demo_qerr_hist.png
+  output/demo_inl_dnl.png
+  output/demo_spectrum.png
+  output/demo_trace_0.25.png
+  output/demo_trace_mid.png
+  output/demo_trace_0.81.png
+  output/demo_metrics.json

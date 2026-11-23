@@ -1,0 +1,2 @@
+dashboard written to output/dashboard.html
+open it in a browser (no server needed; the file is self-contained)

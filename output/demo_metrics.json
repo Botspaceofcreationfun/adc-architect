@@ -1,0 +1,50 @@
+{
+  "cfg": {
+    "n_bits": 8,
+    "v_ref": 1.0,
+    "v_min": 0.0,
+    "coding": "offset_binary",
+    "tread": "midrise",
+    "reconstruction": "midpoint"
+  },
+  "nonideal": {
+    "comparator_offset": 0.0,
+    "comparator_noise_rms": 0.0,
+    "ref_error": 0.0,
+    "cap_mismatch_sigma": 0.0,
+    "acquisition_time": 1e-06,
+    "switch_tau": 0.0,
+    "sampling_jitter_rms": 0.0,
+    "slew_nl": 0.0,
+    "seed": 0
+  },
+  "test_signal": {
+    "fs": 1000000.0,
+    "f_sig": 60852.05078125,
+    "amp": 0.45,
+    "n": 16384
+  },
+  "spectrum": {
+    "P_sig": 0.1519247901180758,
+    "P_harm": 3.6777801129557686e-08,
+    "P_noise": 1.920774715427551e-06,
+    "sndr_db": 48.899152230563494,
+    "snr_db": 48.981522148997286,
+    "thd_db": -66.16042884959757,
+    "sfdr_db": 68.2362445736165,
+    "enob": 7.830423958565365
+  },
+  "metrics": {
+    "inl_max_endpoint_lsb": 0.0,
+    "inl_max_bestfit_lsb": 0.0,
+    "dnl_max_lsb": 0.0,
+    "gain_error_frac": 0.0,
+    "latency": {
+      "comparison_cycles": 8,
+      "acquisition_time_s": 1e-06,
+      "t_cycle_s": 1e-09,
+      "total_time_s": 1.008e-06,
+      "latency_sample_periods": 1.008
+    }
+  }
+}

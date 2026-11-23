@@ -1,0 +1,18 @@
+Metrics -- 8-bit SAR, fs=1 MHz, fin=60.9 kHz, amp=0.45 V
+nonidealities: NonidealityConfig(comparator_offset=0.0, comparator_noise_rms=0.0, ref_error=0.0, cap_mismatch_sigma=0.0, acquisition_time=1e-06, switch_tau=0.0, sampling_jitter_rms=0.0, slew_nl=0.0, seed=0)
+  SNDR :    48.90 dB
+  SNR  :    48.98 dB
+  THD  :   -66.16 dB
+  SFDR :    68.24 dB
+  ENOB :    7.830 bit   (=(SNDR-1.76)/6.02)
+  INL max (endpoint):    0.000 LSB
+  INL max (bestfit) :    0.000 LSB
+  DNL max           :    0.000 LSB
+  gain error        :    0.000 %
+  latency           : 8 cycles, 1.01e-06 s, 1.01 sample periods @ fs
+plots written:
+  output/ideal/metrics_transfer.png
+  output/ideal/metrics_qerr_hist.png
+  output/ideal/metrics_inl_dnl.png
+  output/ideal/metrics_spectrum.png
+metrics JSON written to output/ideal/metrics.json
